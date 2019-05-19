@@ -27,8 +27,8 @@ func main() {
 	jim.print()
 }
 
-func (p person) updateName(n string) {
-	p.firstName = n
+func (pointerToPerson *person) updateName(n string) {
+	(*pointerToPerson).firstName = n
 }
 
 func (p person) print() {
